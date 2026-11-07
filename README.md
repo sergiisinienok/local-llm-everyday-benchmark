@@ -28,7 +28,7 @@ python3 make_vision_fixtures.py                    # only needed for Eval 3
 
 In each `.yaml`, replace the model id (`qwen3.8:27b`) with your exact tag. Eval 3 needs a **vision** build of the model.
 
-Eval 1 uses a cloud model as judge for open-ended answers, so set `export ANTHROPIC_API_KEY=...` (or change the judge to a local model). Evals 2 and 3 need no internet and no judge.
+Eval 1 uses a cloud model (Claude) as judge for open-ended answers, so **you need a working Claude Code session** (Claude Code installed and logged in on this machine) for the judging to work. Without it the `llm-rubric` checks fail. Alternatively, set `export ANTHROPIC_API_KEY=...` or change the judge in `defaultTest` to a local model. Evals 2 and 3 need no internet and no judge.
 
 ## Run
 

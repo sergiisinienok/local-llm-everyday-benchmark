@@ -1,0 +1,214 @@
+# Local LLM eval #3: VISION (promptfoo) - only for a vision-capable model
+#
+# Images are generated with known ground truth (text, counts, colors, chart values, clock...),
+# so every answer is checked automatically - no judge model, works fully offline.
+#
+# Metrics (filter by these in `promptfoo view`):
+#   ocr, vision_format, counting, chart_table, spatial, everyday, honesty_vision
+#
+# SETUP (one-time):
+#   pip3 install pillow
+#   python3 make_vision_fixtures.py          # creates ./fixtures_vision/
+#   ollama pull <your-vision-model-tag>      # must be a VISION build (e.g. a "-vl" model)
+#
+# RUN (from this folder):
+#   npx promptfoo@latest eval -c promptfooconfig-vision.yaml
+#   npx promptfoo@latest view
+#
+# If EVERY test fails with an error about images, your model/tag has no vision support.
+# If only the WebP test fails, the runtime likely can't decode WebP (a runtime limit, not
+# a model limit) - compare it with the PNG/JPEG versions of the same receipt.
+
+description: "Local qwen3.8:27b-mlx - vision (OCR, counting, charts, screenshots, honesty)"
+
+prompts:
+  - |
+    [{"role":"system","content":"You are a helpful assistant that can see images. Answer concisely. If something is not visible in the image, say so instead of guessing."},{"role":"user","content":[{"type":"text","text":{{ q | dump | safe }}},{"type":"image_url","image_url":{"url":"data:{{ mime }};base64,{{ image }}"}}]}]
+
+providers:
+  # REPLACE with the exact vision-capable tag from `ollama list`
+  - id: openai:chat:qwen3.8:27b-mlx
+    label: local-qwen-vision
+    config:
+      apiBaseUrl: http://localhost:11434/v1
+      apiKey: ollama
+      temperature: 0.1
+      max_tokens: 2048
+
+tests:
+- vars:
+    q: 'What does the sign say?'
+    image: file://fixtures_vision/sign.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "/open\\s*24\\s*hours?/i.test(output)"
+- vars:
+    q: 'What is the total on this receipt? Give the number.'
+    image: file://fixtures_vision/receipt.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "output.includes('11.95')"
+- vars:
+    q: 'How much did the sandwich cost?'
+    image: file://fixtures_vision/receipt.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "output.includes('7.25')"
+- vars:
+    q: 'This is a screenshot of my terminal. What went wrong, and what is the error code?'
+    image: file://fixtures_vision/terminal.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "/\\b28\\b/.test(output) && /disk full|no space/i.test(output)"
+- vars:
+    q: 'What is the Wi-Fi password?'
+    image: file://fixtures_vision/wifi_card.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "output.includes('blue-fox-77')"
+- vars:
+    q: 'Which gate is my flight at, and when does boarding start?'
+    image: file://fixtures_vision/boarding_pass.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: ocr
+      value: "/B7/i.test(output) && output.includes('18:45')"
+- vars:
+    q: 'What is the total on this receipt? Give the number.'
+    image: file://fixtures_vision/receipt.jpg
+    mime: image/jpeg
+  assert:
+    - type: javascript
+      metric: vision_format
+      value: "output.includes('11.95')"
+- vars:
+    q: 'What is the total on this receipt? Give the number.'
+    image: file://fixtures_vision/receipt.webp
+    mime: image/webp
+  assert:
+    - type: javascript
+      metric: vision_format
+      value: "output.includes('11.95')"
+- vars:
+    q: 'What is the total on this receipt? Give the number.'
+    image: file://fixtures_vision/receipt_small.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: vision_format
+      value: "output.includes('11.95')"
+- vars:
+    q: 'How many red circles are in the image? Answer with just the number.'
+    image: file://fixtures_vision/shapes.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: counting
+      value: "/\\b5\\b|five/i.test(output)"
+- vars:
+    q: 'How many blue squares are in the image? Answer with just the number.'
+    image: file://fixtures_vision/shapes.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: counting
+      value: "/\\b3\\b|three/i.test(output)"
+- vars:
+    q: 'How many shapes are there in total? Answer with just the number.'
+    image: file://fixtures_vision/shapes.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: counting
+      value: "/\\b8\\b|eight/i.test(output)"
+- vars:
+    q: 'Which light of this traffic light is currently lit?'
+    image: file://fixtures_vision/traffic.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: counting
+      value: "/green/i.test(output)"
+- vars:
+    q: 'Which month has the highest value, and what is that value?'
+    image: file://fixtures_vision/bar_chart.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: chart_table
+      value: "/feb/i.test(output) && output.includes('70')"
+- vars:
+    q: 'What is the difference between March and January?'
+    image: file://fixtures_vision/bar_chart.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: chart_table
+      value: "/\\b15\\b/.test(output)"
+- vars:
+    q: 'In which city does the oldest person live?'
+    image: file://fixtures_vision/table.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: chart_table
+      value: "/lisbon/i.test(output)"
+- vars:
+    q: 'Is the red square to the left or to the right of the blue circle? Answer with one word.'
+    image: file://fixtures_vision/spatial.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: spatial
+      value: "/\\bleft\\b/i.test(output) && !/\\bright\\b/i.test(output)"
+- vars:
+    q: 'In this diagram, which step comes right after Convert?'
+    image: file://fixtures_vision/flow.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: spatial
+      value: "/upload/i.test(output)"
+- vars:
+    q: 'What time does this analog clock show?'
+    image: file://fixtures_vision/clock.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: spatial
+      value: "/3:00|3 o.?clock|three o.?clock|15:00/i.test(output)"
+- vars:
+    q: 'Transcribe all the text in this image.'
+    image: file://fixtures_vision/blank.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: honesty_vision
+      value: "/no (visible )?text|not (see|visible|contain)|nothing|blank|empty|no words|doesn.t (contain|have|show)|does not (contain|have|show)/i.test(output)"
+- vars:
+    q: 'How many people are in this picture?'
+    image: file://fixtures_vision/shapes.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: honesty_vision
+      value: "/no (people|person|one)|\\b0\\b|zero|none|not (see|visible|any)|doesn.t|does not|there are no/i.test(output)"
+- vars:
+    q: 'What phone number is shown on the sign?'
+    image: file://fixtures_vision/sign.png
+    mime: image/png
+  assert:
+    - type: javascript
+      metric: honesty_vision
+      value: "/no phone|not (see|visible|shown|any|include)|doesn.t|does not|no number|none|there is no/i.test(output) && !/\\d{3}[\\s.-]?\\d{3}/.test(output)"
