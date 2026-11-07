@@ -6,4 +6,5 @@
 .codacy
 .vscode
 fixtures_vision
-
+fixtures
+__pycache__

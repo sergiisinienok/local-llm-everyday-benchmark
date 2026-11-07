@@ -41,6 +41,12 @@ providers:
       apiKey: ollama
       temperature: 0.2
       max_tokens: 1024
+      # Thinking OFF. With reasoning on, promptfoo returns only "Thinking: ..." and drops
+      # the tool call. `passthrough` adds the field to the raw request body (promptfoo does
+      # not forward reasoning_effort itself). For thinking runs use "medium" and raise
+      # max_tokens (~8192).
+      passthrough:
+        reasoning_effort: none
       tool_choice: auto
       tools:
         - type: function
@@ -314,3 +320,8 @@ tests:
         accept:
           - {tool: list_dir, arg: path, regex: "."}
           - {tool: run_terminal, regex: "\\bls\\b|find\\s|fd\\s"}
+        # The system prompt already lists the folder, so answering directly is fine as long
+        # as the model says the file doesn't exist and does not invent contents (no code block).
+        or_answer:
+          regex: "no such file|not (found|exist|present|in)|doesn.t exist|does not exist|no `?config\\.yaml"
+          forbid: "```"
