@@ -22,8 +22,10 @@
 description: "Local qwen3.8:27b-mlx - vision (OCR, counting, charts, screenshots, honesty)"
 
 prompts:
+  # NOTE: promptfoo renders a file:// image var as a full data: URI already, so the url is just
+  # {{ image }} (wrapping it in data:...;base64, again gives an invalid doubled prefix).
   - |
-    [{"role":"system","content":"You are a helpful assistant that can see images. Answer concisely. If something is not visible in the image, say so instead of guessing."},{"role":"user","content":[{"type":"text","text":{{ q | dump | safe }}},{"type":"image_url","image_url":{"url":"data:{{ mime }};base64,{{ image }}"}}]}]
+    [{"role":"system","content":"You are a helpful assistant that can see images. Answer concisely. If something is not visible in the image, say so instead of guessing."},{"role":"user","content":[{"type":"text","text":{{ q | dump | safe }}},{"type":"image_url","image_url":{"url":"{{ image }}"}}]}]
 
 providers:
   # REPLACE with the exact vision-capable tag from `ollama list`
@@ -34,6 +36,11 @@ providers:
       apiKey: ollama
       temperature: 0.1
       max_tokens: 2048
+      # Thinking OFF: otherwise promptfoo prepends "Thinking: ..." to the output and the text
+      # checks would match the reasoning instead of the answer. `passthrough` adds the field
+      # to the raw request body. For thinking runs use "medium" and raise max_tokens (~8192).
+      passthrough:
+        reasoning_effort: none
 
 tests:
 - vars:
