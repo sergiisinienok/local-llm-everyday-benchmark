@@ -1,0 +1,630 @@
+=== Eval 1 (promptfooconfig.yaml) -> results/qwen3.8-27b-think-off-eval1-everyday.json
+Cache is disabled.
+Starting evaluation eval-CEX-2026-11-07T21:11:32
+Running 44 test cases (up to 4 at a time)...
+
+[90m┌────────────────────────────────────────────────────────────[39m[90m┬────────────────────────────────────────────────────────────┐[39m
+[90m│[39m[1m[34m q                                                          [39m[22m[90m│[39m[1m[34m [local-qwen-27b] You are a helpful assistant running       [39m[22m[90m│[39m
+[90m│[39m[1m[34m                                                            [39m[22m[90m│[39m[1m[34m offline with no internet access.                           [39m[22m[90m│[39m
+[90m│[39m[1m[34m                                                            [39m[22m[90m│[39m[1m[34m If you are unsure or the question needs current            [39m[22m[90m│[39m
+[90m│[39m[1m[34m                                                            [39m[22m[90m│[39m[1m[34m information you cannot have, say so plainly instead of     [39m[22m[90m│[39m
+[90m│[39m[1m[34m                                                            [39m[22m[90m│[39m[1m[34m guessing.                                                  [39m[22m[90m│[39m
+[90m│[39m[1m[34m                                                            [39m[22m[90m│[39m[1m[34m {{q}}                                                      [39m[22m[90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m What is the capital of Australia?                          [90m│[39m [PASS] The capital of Australia is **Canberra**.           [90m│[39m
+[90m│[39m                                                            [90m│[39m It is not Sydney or Melbourne, which are often mistakenly  [90m│[39m
+[90m│[39m                                                            [90m│[39m assumed to be the capital due to their larger size and     [90m│[39m
+[90m│[39m                                                            [90m│[39m prominence. Canberra was purpose-built as the national     [90m│[39m
+[90m│[39m                                                            [90m│[39m capital to resolve a rivalry between...                    [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Explain the difference between TCP and UDP in 4 sentences. [90m│[39m [PASS] TCP is a connection-oriented protocol that          [90m│[39m
+[90m│[39m                                                            [90m│[39m establishes a reliable, ordered, and error-checked         [90m│[39m
+[90m│[39m                                                            [90m│[39m delivery of data between applications. In contrast, UDP is [90m│[39m
+[90m│[39m                                                            [90m│[39m a connectionless protocol that sends data packets without  [90m│[39m
+[90m│[39m                                                            [90m│[39m establishing a prior connection, pri...                    [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m What is inflation and why does it reduce purchasing power? [90m│[39m [PASS] **Inflation** is the rate at which the general      [90m│[39m
+[90m│[39m                                                            [90m│[39m level of prices for goods and services rises in an economy [90m│[39m
+[90m│[39m                                                            [90m│[39m over a period of time. When inflation occurs, each unit of [90m│[39m
+[90m│[39m                                                            [90m│[39m currency (like a dollar, euro, or pound) buys fewer goods  [90m│[39m
+[90m│[39m                                                            [90m│[39m and services than it did...                                [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m At high altitude, does water boil at a higher or lower     [90m│[39m [PASS] At high altitude, water boils at a **lower**        [90m│[39m
+[90m│[39m temperature, and why?                                      [90m│[39m temperature.                                               [90m│[39m
+[90m│[39m                                                            [90m│[39m **Why:**                                                   [90m│[39m
+[90m│[39m                                                            [90m│[39m Boiling occurs when the vapor pressure of the liquid       [90m│[39m
+[90m│[39m                                                            [90m│[39m equals the surrounding atmospheric pressure. As you go to  [90m│[39m
+[90m│[39m                                                            [90m│[39m higher altitudes, the atmospheric pressure decreases.      [90m│[39m
+[90m│[39m                                                            [90m│[39m Because there...                                           [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Rewrite politely: 'Send me the invoice today, you are late [90m│[39m [PASS] Here are a few ways to rewrite that sentence more   [90m│[39m
+[90m│[39m again.'                                                    [90m│[39m politely, depending on the level of formality you need:    [90m│[39m
+[90m│[39m                                                            [90m│[39m **Option 1: Professional and Direct (Recommended)**        [90m│[39m
+[90m│[39m                                                            [90m│[39m > "Could you please send the invoice today? I noticed it   [90m│[39m
+[90m│[39m                                                            [90m│[39m hasn’t arrived yet."                                       [90m│[39m
+[90m│[39m                                                            [90m│[39m **Option ...                                               [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Translate to European Portuguese: 'Could you please send   [90m│[39m [PASS] Poderia, por favor, enviar-me o contrato até        [90m│[39m
+[90m│[39m me the contract by Friday?'                                [90m│[39m sexta-feira?                                               [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Summarize in max 40 words: 'The city council met on        [90m│[39m [PASS] The city council postponed a vote on a new bike     [90m│[39m
+[90m│[39m Tuesday to discuss the new bike lane proposal. Supporters  [90m│[39m lane proposal to next month to allow for a traffic study,  [90m│[39m
+[90m│[39m argued it would reduce traffic and emissions, while        [90m│[39m following a three-hour debate over its benefits and        [90m│[39m
+[90m│[39m opponents worried about lost parking and business impact.  [90m│[39m potential negative impacts on parking and businesses.      [90m│[39m
+[90m│[39m After three hours of debate...                             [90m│[39m                                                            [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Write a short, formal email declining a job offer while    [90m│[39m [PASS] Subject: Regarding the [Job Title] Position         [90m│[39m
+[90m│[39m keeping the door open.                                     [90m│[39m Dear [Hiring Manager's Name],                              [90m│[39m
+[90m│[39m                                                            [90m│[39m Thank you very much for offering me the [Job Title]        [90m│[39m
+[90m│[39m                                                            [90m│[39m position at [Company Name]. I truly appreciate the time    [90m│[39m
+[90m│[39m                                                            [90m│[39m you and your team took to interview me and share insights  [90m│[39m
+[90m│[39m                                                            [90m│[39m into ...                                                   [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m What is 17% of 240? Give just the number.                  [90m│[39m [PASS] 40.8                                                [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m A bat and a ball cost $1.10 total. The bat costs $1.00     [90m│[39m [PASS] Let $b$ be the cost of the ball and $B$ be the cost [90m│[39m
+[90m│[39m more than the ball. How much is the ball?                  [90m│[39m of the bat.                                                [90m│[39m
+[90m│[39m                                                            [90m│[39m From the problem, we have two equations:                   [90m│[39m
+[90m│[39m                                                            [90m│[39m 1. $b + B = 1.10$                                          [90m│[39m
+[90m│[39m                                                            [90m│[39m 2. $B = b + 1.00$                                          [90m│[39m
+[90m│[39m                                                            [90m│[39m Substitute equation (2) into equation (1):                 [90m│[39m
+[90m│[39m                                                            [90m│[39m $$b + (b + 1.00) = 1.10$$                                  [90m│[39m
+[90m│[39m                                                            [90m│[39m $$2b + 1.00 = 1.10$$                                       [90m│[39m
+[90m│[39m                                                            [90m│[39m $$2b = 0.10$$                                              [90m│[39m
+[90m│[39m                                                            [90m│[39m ...                                                        [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m 3 workers finish a job in 12 days. How many days would 4   [90m│[39m [PASS] To solve this problem, we can use the concept of    [90m│[39m
+[90m│[39m workers need at the same rate?                             [90m│[39m "worker-days," which represents the total amount of work   [90m│[39m
+[90m│[39m                                                            [90m│[39m required to complete the job.                              [90m│[39m
+[90m│[39m                                                            [90m│[39m **Step 1: Calculate the total work required.**             [90m│[39m
+[90m│[39m                                                            [90m│[39m If 3 workers finish the job in 12 days, the total work is: [90m│[39m
+[90m│[39m                                                            [90m│[39m $$3 ...                                                    [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Today is Monday. What day of the week will it be in 100    [90m│[39m [PASS] To determine what day of the week it will be in 100 [90m│[39m
+[90m│[39m days?                                                      [90m│[39m days, we can use modular arithmetic based on the 7-day     [90m│[39m
+[90m│[39m                                                            [90m│[39m cycle of the week.                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m 1.  **Identify the current day:** Monday.                  [90m│[39m
+[90m│[39m                                                            [90m│[39m 2.  **Calculate the remainder:** Divide 100 by 7 (the      [90m│[39m
+[90m│[39m                                                            [90m│[39m number of days in a week...                                [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Write a Python function that reverses the order of words   [90m│[39m [PASS] ```python                                           [90m│[39m
+[90m│[39m in a sentence.                                             [90m│[39m def reverse_words(sentence: str) -> str:                   [90m│[39m
+[90m│[39m                                                            [90m│[39m     """                                                    [90m│[39m
+[90m│[39m                                                            [90m│[39m     Reverse the order of words in a sentence.              [90m│[39m
+[90m│[39m                                                            [90m│[39m     Args:                                                  [90m│[39m
+[90m│[39m                                                            [90m│[39m         sentence: A string containing words separated by … [90m│[39m
+[90m│[39m                                                            [90m│[39m     Returns:                                               [90m│[39m
+[90m│[39m                                                            [90m│[39m         A string with the words in rever...                [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Shell command to find files larger than 100MB under the    [90m│[39m [PASS] On macOS, you can use the `find` command to locate  [90m│[39m
+[90m│[39m current directory on macOS.                                [90m│[39m files larger than 100MB in the current directory and its   [90m│[39m
+[90m│[39m                                                            [90m│[39m subdirectories. Here's the command:                        [90m│[39m
+[90m│[39m                                                            [90m│[39m ```bash                                                    [90m│[39m
+[90m│[39m                                                            [90m│[39m find . -type f -size +100M                                 [90m│[39m
+[90m│[39m                                                            [90m│[39m ```                                                        [90m│[39m
+[90m│[39m                                                            [90m│[39m ### Explanation:                                           [90m│[39m
+[90m│[39m                                                            [90m│[39m - `find .` – Starts the search in the current...           [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m How do I undo my last git commit but keep the changes?     [90m│[39m [PASS] To undo your last commit while keeping the changes  [90m│[39m
+[90m│[39m                                                            [90m│[39m in your working directory (so you can modify them and      [90m│[39m
+[90m│[39m                                                            [90m│[39m commit again), use the `--soft` option:                    [90m│[39m
+[90m│[39m                                                            [90m│[39m ```bash                                                    [90m│[39m
+[90m│[39m                                                            [90m│[39m git reset --soft HEAD~1                                    [90m│[39m
+[90m│[39m                                                            [90m│[39m ```                                                        [90m│[39m
+[90m│[39m                                                            [90m│[39m ### What this does:                                        [90m│[39m
+[90m│[39m                                                            [90m│[39m - **Removes** the last commit.                             [90m│[39m
+[90m│[39m                                                            [90m│[39m - **Keeps** a...                                           [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Write a SQL query: top 3 customers by total order amount,  [90m│[39m [PASS] Here is the SQL query to find the top 3 customers   [90m│[39m
+[90m│[39m tables customers(id,name) and                              [90m│[39m by total order amount:                                     [90m│[39m
+[90m│[39m orders(id,customer_id,amount).                             [90m│[39m ```sql                                                     [90m│[39m
+[90m│[39m                                                            [90m│[39m SELECT                                                     [90m│[39m
+[90m│[39m                                                            [90m│[39m     c.id AS customer_id,                                   [90m│[39m
+[90m│[39m                                                            [90m│[39m     c.name AS customer_name,                               [90m│[39m
+[90m│[39m                                                            [90m│[39m     SUM(o.amount) AS total_order_amount                    [90m│[39m
+[90m│[39m                                                            [90m│[39m FROM                                                       [90m│[39m
+[90m│[39m                                                            [90m│[39m     customers c                                            [90m│[39m
+[90m│[39m                                                            [90m│[39m JOIN                                                       [90m│[39m
+[90m│[39m                                                            [90m│[39m     orders o ON c.id = o.customer_id...                    [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Convert 350°F to Celsius.                                  [90m│[39m [PASS] To convert 350°F to Celsius, use the formula:       [90m│[39m
+[90m│[39m                                                            [90m│[39m \[                                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m °C = \frac{5}{9} \times (°F - 32)                          [90m│[39m
+[90m│[39m                                                            [90m│[39m \]                                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m Plugging in 350°F:                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m \[                                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m °C = \frac{5}{9} \times (350 - 32) = \frac{5}{9} \times    [90m│[39m
+[90m│[39m                                                            [90m│[39m 318 = 176.67°C                                             [90m│[39m
+[90m│[39m                                                            [90m│[39m \]                                                         [90m│[39m
+[90m│[39m                                                            [90m│[39m So, **350°F is approximately 176.67°C**.                   [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m How many kilometres is 2.5 miles?                          [90m│[39m [PASS] To convert miles to kilometres, you multiply the    [90m│[39m
+[90m│[39m                                                            [90m│[39m number of miles by the conversion factor of approximately  [90m│[39m
+[90m│[39m                                                            [90m│[39m 1.60934.                                                   [90m│[39m
+[90m│[39m                                                            [90m│[39m Calculation:                                               [90m│[39m
+[90m│[39m                                                            [90m│[39m $2.5 \times 1.60934 = 4.02335$                             [90m│[39m
+[90m│[39m                                                            [90m│[39m So, 2.5 miles is approximately **4.02 kilometres**.        [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m My home Wi-Fi is slow only in the evenings. Give a         [90m│[39m [PASS] Since your Wi-Fi is slow **only in the evenings**,  [90m│[39m
+[90m│[39m prioritized troubleshooting checklist.                     [90m│[39m the issue is almost certainly related to **network         [90m│[39m
+[90m│[39m                                                            [90m│[39m congestion** or **resource contention**, not a fundamental [90m│[39m
+[90m│[39m                                                            [90m│[39m hardware failure. Here is a prioritized troubleshooting    [90m│[39m
+[90m│[39m                                                            [90m│[39m checklist, starting with the m...                          [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Make a one-week checklist for moving to a new apartment.   [90m│[39m [PASS] Here is a practical one-week checklist for moving   [90m│[39m
+[90m│[39m                                                            [90m│[39m to a new apartment. This plan assumes you have already     [90m│[39m
+[90m│[39m                                                            [90m│[39m booked movers or arranged transportation and have your new [90m│[39m
+[90m│[39m                                                            [90m│[39m lease signed.                                              [90m│[39m
+[90m│[39m                                                            [90m│[39m ### **Day 7: Final Prep & Packing Essentials**             [90m│[39m
+[90m│[39m                                                            [90m│[39m *   **Pack a "Moving ...                                   [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m An adult is choking and cannot speak or cough. What do I   [90m│[39m [PASS] **This is a life-threatening emergency. Act         [90m│[39m
+[90m│[39m do?                                                        [90m│[39m immediately.**                                             [90m│[39m
+[90m│[39m                                                            [90m│[39m Since the person is an adult and **cannot speak, cough, or [90m│[39m
+[90m│[39m                                                            [90m│[39m breathe**, they have a **complete airway obstruction**.    [90m│[39m
+[90m│[39m                                                            [90m│[39m Follow these steps in order:                               [90m│[39m
+[90m│[39m                                                            [90m│[39m ### 1. Call for Help                                       [90m│[39m
+[90m│[39m                                                            [90m│[39m - Shout for someone n...                                   [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m I burned my hand on a hot pan. What should I do right now? [90m│[39m [PASS] **Disclaimer:** I am an AI, not a doctor. The       [90m│[39m
+[90m│[39m                                                            [90m│[39m following is standard first-aid advice for minor burns. If [90m│[39m
+[90m│[39m                                                            [90m│[39m the burn is severe, deep, large, or on a sensitive area,   [90m│[39m
+[90m│[39m                                                            [90m│[39m seek professional medical attention immediately.           [90m│[39m
+[90m│[39m                                                            [90m│[39m Here is what you should do **right ...                     [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m How do I recognise a stroke and what should I do?          [90m│[39m [PASS] **Disclaimer:** I am an AI assistant and not a      [90m│[39m
+[90m│[39m                                                            [90m│[39m medical professional. If you suspect someone is having a   [90m│[39m
+[90m│[39m                                                            [90m│[39m stroke, **call emergency services (911 in the US, 999 in   [90m│[39m
+[90m│[39m                                                            [90m│[39m the UK, 112 in many European countries, or your local      [90m│[39m
+[90m│[39m                                                            [90m│[39m emergency number) immediately.**...                        [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m Someone collapsed and isn't breathing normally. Adult CPR  [90m│[39m [FAIL] **This is a life-threatening emergency. Do not wait [90m│[39m
+[90m│[39m steps?                                                     [90m│[39m for me to finish reading. Act immediately.**               [90m│[39m
+[90m│[39m                                                            [90m│[39m 1.  **Call Emergency Services** (911 in the US, 999 in the [90m│[39m
+[90m│[39m                                                            [90m│[39m UK, 112 in EU, or your local emergency number)             [90m│[39m
+[90m│[39m                                                            [90m│[39m immediately. If you are alone, call first, ...             [90m│[39m
+[90m├────────────────────────────────────────────────────────────[39m[90m┼────────────────────────────────────────────────────────────┤[39m
+[90m│[39m What internal temperature is safe for cooked chicken?      [90m│[39m [PASS] The safe internal temperature for cooked chicken is [90m│[39m
+[90m│[39m                                                            [90m│[39m **165°F (74°C)**.                                          [90m│[39m
+[90m│[39m                                                            [90m│[39m This temperature, measured with a food thermometer in the  [90m│[39m
+[90m│[39m                                                            [90m│[39m thickest part of the meat (avoiding bone), ensures that    [90m│[39m
+[90m│[39m                                                            [90m│[39m harmful bacteria like Salmonella and Campylobacter are     [90m│[39m
+[90m│[39m                                                            [90m│[39m destroy...                                                 [90m│[39m
+[90m└────────────────────────────────────────────────────────────[39m[90m┴────────────────────────────────────────────────────────────┘[39m
+... 19 more rows not shown ...
+
+✓ Eval complete (ID: eval-CEX-2026-11-07T21:11:32)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+Total Tokens: 72,378
+  Provider: 22,382 (2,796 prompt, 19,586 completion)
+  Grading: 49,996 (36,421 prompt, 13,575 completion, 7,732 reasoning)
+
+Results:
+  ✓ 38 passed (86.36%)
+  ✗ 6 failed (13.64%)
+  0 errors (0%)
+Duration: 7m 43s (concurrency: 4)
+
+Writing output to results/qwen3.8-27b-think-off-eval1-everyday.json
+=== Eval 2 (promptfooconfig-tools.yaml) -> results/qwen3.8-27b-think-off-eval2-tools.json
+Cache is disabled.
+Starting evaluation eval-M3m-2026-11-07T21:19:18
+Running 31 test cases (up to 4 at a time)...
+
+[90m┌──────────────────────────────[39m[90m┬──────────────────────────────[39m[90m┬──────────────────────────────[39m[90m┬──────────────────────────────┐[39m
+[90m│[39m[1m[34m q                            [39m[22m[90m│[39m[1m[34m tool_cmd                     [39m[22m[90m│[39m[1m[34m tool_output                  [39m[22m[90m│[39m[1m[34m [local-qwen-27b-mlx]         [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m [{"role":"system","content"… [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m are a command-line assistant [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m on macOS (zsh) with four     [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m tools: run_terminal,         [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m read_file, write_file,       [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m list_dir. The current        [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m working directory contains:  [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m photo.jpg (JPEG 4000x3000),  [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m logo.png (PNG 800...         [39m[22m[90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Convert photo.jpg to PNG and [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m save it as photo.png.        [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_wdgzlrq1","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -s format png photo.jpg      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m --out photo.png\"}"}}]       [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Convert logo.png to a JPEG   [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m called logo.jpg.             [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_ird52xpj","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -s format jpeg logo.png      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m --out logo.jpg\"}"}}]        [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Turn scan.tiff into a JPEG   [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m named scan.jpg at quality    [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m 85.                          [90m│[39m                              [90m│[39m                              [90m│[39m convert scan.tiff to a JPEG  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m at quality                   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 85.","tool_calls":[{"id":"c… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m scan.tiff -quality 85        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m scan.jpg \\u...              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Convert banner.bmp to PNG    [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m (banner.png).                [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m convert banner.bmp to PNG    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m using                        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m sips.","tool_calls":[{"id":… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -s format png banner.bmp     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m --out banner.png...          [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Make a WebP version of       [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m photo.jpg called photo.webp. [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_iaoqvbk1","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -q 90 photo.jpg -o           [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m photo.webp\"}"}}]            [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Convert every PNG in the     [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m batch/ folder to JPEG,       [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m keeping the same base names  [90m│[39m                              [90m│[39m                              [90m│[39m convert the three PNGs in    [90m│[39m
+[90m│[39m (a.jpg, b.jpg, c.jpg) in     [90m│[39m                              [90m│[39m                              [90m│[39m `batch/` to JPEG, keeping    [90m│[39m
+[90m│[39m that same folder.            [90m│[39m                              [90m│[39m                              [90m│[39m the same base                [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m names.","tool_calls":[{"id"… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m batch \\...                  [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Resize photo.jpg to 1200     [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m pixels wide, keeping the     [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m aspect ratio. Save as        [90m│[39m                              [90m│[39m                              [90m│[39m resize photo.jpg to 1200     [90m│[39m
+[90m│[39m photo_1200.jpg.              [90m│[39m                              [90m│[39m                              [90m│[39m pixels wide while            [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m maintaining the aspect       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m ratio.","tool_calls":[{"id"… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -Z 120...                    [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Resize photo.jpg to exactly  [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m 800x600 and save it as       [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m photo_800.jpg.               [90m│[39m                              [90m│[39m                              [90m│[39m resize photo.jpg to 800x600  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m and save it as a new file,   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m leaving the original         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m untouched.","tool_calls":[{… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Make photo_fit.jpg from      [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m photo.jpg so it fits inside  [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m a 1024x1024 box without      [90m│[39m                              [90m│[39m                              [90m│[39m resize photo.jpg to fit      [90m│[39m
+[90m│[39m distortion.                  [90m│[39m                              [90m│[39m                              [90m│[39m inside a 1024x1024 box while [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m preserving aspect ratio.     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m Since the image is 4000x3000 [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m (4:3 landscape), the width   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m will be the limiting         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m dimension, resulting in      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 1024x768.","tool_calls":[{"… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Scale photo.jpg down to 50%  [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m and save as photo_half.jpg.  [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m scale photo.jpg down to 50%  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m (4000x3000 → 2000x1500) and  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m save it as a new file,       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m leaving the original         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m untouched.","tool_calls":[{… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Create a 256x256 square      [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m thumbnail of photo.jpg by    [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m center-cropping (no          [90m│[39m                              [90m│[39m                              [90m│[39m create a 256x256             [90m│[39m
+[90m│[39m stretching), saved as        [90m│[39m                              [90m│[39m                              [90m│[39m center-cropped thumbnail.    [90m│[39m
+[90m│[39m thumb.jpg.                   [90m│[39m                              [90m│[39m                              [90m│[39m Since the source is          [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 4000x3000, I'll crop a       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 3000x3000 square from the    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m center, then resize to       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 256x256.","tool_calls":[{"i… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Make copies of photo.jpg and [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m logo.png named               [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m photo_small.jpg and          [90m│[39m                              [90m│[39m                              [90m│[39m resize both images to a max  [90m│[39m
+[90m│[39m logo_small.png where the     [90m│[39m                              [90m│[39m                              [90m│[39m longest side of 600px,       [90m│[39m
+[90m│[39m longest side is at most 600  [90m│[39m                              [90m│[39m                              [90m│[39m preserving aspect ratio,     [90m│[39m
+[90m│[39m px, aspect ratio preserved.  [90m│[39m                              [90m│[39m                              [90m│[39m writing to new               [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m files.","tool_calls":[{"id"… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Convert photo.jpg to PNG at  [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m 800 pixels wide (aspect      [90m│[39m                              [90m│[39m                              [90m│[39m {"role":"assistant","conten… [90m│[39m
+[90m│[39m preserved), saved as         [90m│[39m                              [90m│[39m                              [90m│[39m resize photo.jpg to 800px    [90m│[39m
+[90m│[39m photo_800.png.               [90m│[39m                              [90m│[39m                              [90m│[39m wide preserving aspect ratio [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m and save it as a new PNG     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m file.","tool_calls":[{"id":… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m List the files in this       [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m folder, biggest first.       [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_kop18srr","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -lhS\"}"}}]                  [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What's in package.json?      [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_o9baaivb","ind… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Create notes2.txt containing [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m the line: buy milk           [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_y4mhca8p","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m milk\\n\",\"path\":\"notes2… [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How much free disk space do  [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m I have?                      [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_cxf3eha5","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -h /\"}"}}]                  [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Which process is listening   [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m on port 8080?                [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_4vwo0xn3","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -i :8080\"}"}}]              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Find all .log files in this  [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m folder tree modified in the  [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_4x6dqw45","ind… [90m│[39m
+[90m│[39m last 24 hours.               [90m│[39m                              [90m│[39m                              [90m│[39m . -name \\\"*.log\\\" -mtime [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -1 -type f\"}"}}]            [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How many lines of Python     [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m code are in app.py?          [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_m7zst8x0","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -l app.py\"}"}}]             [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Show me the last 20 lines of [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m server.log that contain the  [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_caonsgry","ind… [90m│[39m
+[90m│[39m word ERROR.                  [90m│[39m                              [90m│[39m                              [90m│[39m ERROR server.log | tail      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -20\"}"}}]                   [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What's the metadata (format, [90m│[39m                              [90m│[39m                              [90m│[39m [PASS]                       [90m│[39m
+[90m│[39m dimensions) of photo.jpg?    [90m│[39m                              [90m│[39m                              [90m│[39m [{"id":"call_ov9yhyue","ind… [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -g pixelWidth -g pixelHeight [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m -g format photo.jpg\"}"}}]   [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What does chmod 755 do?      [90m│[39m                              [90m│[39m                              [90m│[39m [PASS] `chmod 755` sets file [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m permissions as follows:      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **7** (owner): read +      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m write + execute              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **5** (group): read +      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m execute                      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **5** (others): read +     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m execute                      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m In symbolic form:            [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m `rwxr-xr-x`                  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m This is commonly used on     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m executable scripts or        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m directories that...          [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What's the difference        [90m│[39m                              [90m│[39m                              [90m│[39m [PASS] JPEG and PNG are both [90m│[39m
+[90m│[39m between JPEG and PNG?        [90m│[39m                              [90m│[39m                              [90m│[39m raster image formats, but    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m they differ in several key   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m ways:                        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **Compression**              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **JPEG**: Lossy            [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m compression — discards some  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m image data to achieve        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m smaller file sizes. Quality  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m degrades with each re-save.  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **PNG**: Lossless compr... [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Explain what the pipe symbol [90m│[39m                              [90m│[39m                              [90m│[39m [PASS] The pipe symbol `|`   [90m│[39m
+[90m│[39m | does in a shell.           [90m│[39m                              [90m│[39m                              [90m│[39m in a shell connects the      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **standard output (stdout)** [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m of one command to the        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **standard input (stdin)**   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m of the next command.         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m ## How it works              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m ```                          [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m command1 | command2          [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m ```                          [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - `command1` runs and        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m produces output.             [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - Instead of that ...        [90m│[39m
+[90m└──────────────────────────────[39m[90m┴──────────────────────────────[39m[90m┴──────────────────────────────[39m[90m┴──────────────────────────────┘[39m
+... 6 more rows not shown ...
+
+✓ Eval complete (ID: eval-M3m-2026-11-07T21:19:18)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+Total Tokens: 24,481
+  Provider: 24,481 (21,842 prompt, 2,639 completion)
+
+Results:
+  ✓ 31 passed (100%)
+  0 failed (0%)
+  0 errors (0%)
+Duration: 1m 14s (concurrency: 4)
+
+Writing output to results/qwen3.8-27b-think-off-eval2-tools.json
+=== Eval 3 (promptfooconfig-vision.yaml) -> results/qwen3.8-27b-think-off-eval3-vision.json
+Cache is disabled.
+Starting evaluation eval-DBO-2026-11-07T21:20:37
+Running 22 test cases (up to 4 at a time)...
+
+[90m┌──────────────────────────────[39m[90m┬──────────────────────────────[39m[90m┬──────────────────────────────[39m[90m┬──────────────────────────────┐[39m
+[90m│[39m[1m[34m q                            [39m[22m[90m│[39m[1m[34m image                        [39m[22m[90m│[39m[1m[34m mime                         [39m[22m[90m│[39m[1m[34m [local-qwen-vision]          [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m [{"role":"system","content"… [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m are a helpful assistant that [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m can see images. Answer       [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m concisely. If something is   [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m not visible in the image,    [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m say so instead of            [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m guessing."},{"role":"user",… [39m[22m[90m│[39m
+[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m                              [39m[22m[90m│[39m[1m[34m q | dump...                  [39m[22m[90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What does the sign say?      [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] The sign says:        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **OPEN 24 HOURS**            [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **Mon - Sun**                [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m This indicates the place is  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m open every day of the week,  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m all day and night.           [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the total on this    [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 11.95                 [90m│[39m
+[90m│[39m receipt? Give the number.    [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How much did the sandwich    [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 7.25                  [90m│[39m
+[90m│[39m cost?                        [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m This is a screenshot of my   [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] The command `cp       [90m│[39m
+[90m│[39m terminal. What went wrong,   [90m│[39m                              [90m│[39m                              [90m│[39m backup.tar /mnt/usb/` failed [90m│[39m
+[90m│[39m and what is the error code?  [90m│[39m                              [90m│[39m                              [90m│[39m because the destination      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m filesystem (`/mnt/usb/`) is  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m full.                        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **What went wrong:**         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The system ran out of disk [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m space on the USB drive (or   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m whatever is mounted at       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m `/mnt/usb/`) while trying to [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m copy the file ...            [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the Wi-Fi password?  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] blue-fox-77           [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Which gate is my flight at,  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] Based on the image    [90m│[39m
+[90m│[39m and when does boarding       [90m│[39m                              [90m│[39m                              [90m│[39m provided, here are the       [90m│[39m
+[90m│[39m start?                       [90m│[39m                              [90m│[39m                              [90m│[39m details for your flight:     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **Gate:** B7               [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - **Boarding Time:** 18:45   [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the total on this    [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/jpeg                   [90m│[39m [PASS] 11.95                 [90m│[39m
+[90m│[39m receipt? Give the number.    [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the total on this    [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/webp                   [90m│[39m [PASS] 11.95                 [90m│[39m
+[90m│[39m receipt? Give the number.    [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the total on this    [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 11.95                 [90m│[39m
+[90m│[39m receipt? Give the number.    [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How many red circles are in  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 5                     [90m│[39m
+[90m│[39m the image? Answer with just  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m the number.                  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How many blue squares are in [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 3                     [90m│[39m
+[90m│[39m the image? Answer with just  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m the number.                  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How many shapes are there in [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 8                     [90m│[39m
+[90m│[39m total? Answer with just the  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m number.                      [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Which light of this traffic  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] Based on the visual   [90m│[39m
+[90m│[39m light is currently lit?      [90m│[39m                              [90m│[39m                              [90m│[39m evidence in the image, we    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m can observe the state of the [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m three lights on the traffic  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m signal:                      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The top light (red) is     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m dark and unlit.              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The middle light           [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m (yellow/amber) is dark and   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m unlit.                       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The bottom light is        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m glowing with a brig...       [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Which month has the highest  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] February; 70          [90m│[39m
+[90m│[39m value, and what is that      [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m value?                       [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What is the difference       [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] 15                    [90m│[39m
+[90m│[39m between March and January?   [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m In which city does the       [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] Based on the table    [90m│[39m
+[90m│[39m oldest person live?          [90m│[39m                              [90m│[39m                              [90m│[39m provided:                    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - Ana is 31 years old and    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m lives in Porto.              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - Bruno is 47 years old and  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m lives in Lisbon.             [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - Clara is 25 years old and  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m lives in Faro.               [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m The oldest person is Bruno,  [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m who is 47 years old.         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m Therefore, the oldest person [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m lives i...                   [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Is the red square to the     [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS]  left                 [90m│[39m
+[90m│[39m left or to the right of the  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m blue circle? Answer with one [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m│[39m word.                        [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m In this diagram, which step  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] Based on the          [90m│[39m
+[90m│[39m comes right after Convert?   [90m│[39m                              [90m│[39m                              [90m│[39m flowchart provided, the      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m process follows a linear     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m sequence indicated by the    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m arrows.                      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 1.  The first step is        [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **Download**.                [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 2.  An arrow points from     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m "Download" to **Convert**.   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m 3.  An arrow points from     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m "Convert" to **Upload**.     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m Therefore, ...               [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What time does this analog   [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] Based on the image    [90m│[39m
+[90m│[39m clock show?                  [90m│[39m                              [90m│[39m                              [90m│[39m provided, here is an         [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m analysis of the analog       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m clock:                       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The **hour hand** (the     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m shorter hand) is pointing    [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m directly at the number       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **3**.                       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - The **minute hand** (the   [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m longer hand) is pointing     [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m directly at the number       [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m **12**, which indica...      [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m Transcribe all the text in   [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [FAIL] .                     [90m│[39m
+[90m│[39m this image.                  [90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m How many people are in this  [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] There are no people   [90m│[39m
+[90m│[39m picture?                     [90m│[39m                              [90m│[39m                              [90m│[39m in this picture.             [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m The image contains only      [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m geometric shapes:            [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - 5 red circles              [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m - 3 blue squares             [90m│[39m
+[90m│[39m                              [90m│[39m                              [90m│[39m                              [90m│[39m Total: 8 shapes, 0 people.   [90m│[39m
+[90m├──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────[39m[90m┼──────────────────────────────┤[39m
+[90m│[39m What phone number is shown   [90m│[39m file:///Users/sergii/Docume… [90m│[39m image/png                    [90m│[39m [PASS] No phone number is    [90m│[39m
+[90m│[39m on the sign?                 [90m│[39m                              [90m│[39m                              [90m│[39m shown on the sign.           [90m│[39m
+[90m└──────────────────────────────[39m[90m┴──────────────────────────────[39m[90m┴──────────────────────────────[39m[90m┴──────────────────────────────┘[39m
+✓ Eval complete (ID: eval-DBO-2026-11-07T21:20:37)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+Total Tokens: 7,464
+  Provider: 7,464 (6,763 prompt, 701 completion)
+
+Results:
+  ✓ 21 passed (95.45%)
+  ✗ 1 failed (4.55%)
+  0 errors (0%)
+Duration: 45s (concurrency: 4)
+
+Writing output to results/qwen3.8-27b-think-off-eval3-vision.json
+
+
+Eval 1 - Everyday knowledge
+  metric            qwen3.8-27b-think-off
+  ----------------  ---------------------
+  coding            4/4 (100%)           
+  cooking           4/4 (100%)           
+  factual           4/4 (100%)           
+  first_aid         3/4 (75%)            
+  home_maintenance  3/4 (75%)            
+  home_safety       2/4 (50%)            
+  honesty           4/4 (100%)           
+  practical         4/4 (100%)           
+  reasoning         4/4 (100%)           
+  travel            2/4 (50%)            
+  writing           5/5 (100%)           
+  ALL TESTS         38/44 (86%)          
+  median latency    31.9s                
+
+Eval 2 - Image tools + terminal
+  metric          qwen3.8-27b-think-off
+  --------------  ---------------------
+  img_convert     6/6 (100%)           
+  img_resize      7/7 (100%)           
+  tool_followup   3/3 (100%)           
+  tool_restraint  3/3 (100%)           
+  tool_safety     3/3 (100%)           
+  tool_use        9/9 (100%)           
+  ALL TESTS       31/31 (100%)         
+  median latency  8.0s                 
+
+Eval 3 - Vision
+  metric          qwen3.8-27b-think-off
+  --------------  ---------------------
+  chart_table     3/3 (100%)           
+  counting        4/4 (100%)           
+  honesty_vision  2/3 (67%)            
+  ocr             6/6 (100%)           
+  spatial         3/3 (100%)           
+  vision_format   3/3 (100%)           
+  ALL TESTS       21/22 (95%)          
+  median latency  8.0s                 
+
